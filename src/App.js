@@ -1,15 +1,11 @@
 import React from 'react';
 import './assets/scss/style.scss';
-import { 
-    Button
-} from './components';
+import Router from './router';
 
 const App = () => {
     return (
-        <div> 
-            <Button type="link" isExternal={false} isPrimary>123</Button>
-        </div>
-    )    
+        <Router/>
+    )
 }
 
 export default App;

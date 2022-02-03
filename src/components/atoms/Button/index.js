@@ -20,10 +20,8 @@ const Button = (props) => {
         hasShadow: propTypes.bool,
     }
     
-
     const className = [props.className];
     
-    className.push("btn");
     if(props.isPrimary) className.push("btn-primary")
     if(props.isLarge) className.push("btn-lg")
     if(props.isSmall) className.push("btn-sm")
@@ -31,7 +29,7 @@ const Button = (props) => {
     if(props.hasShadow) className.push("btn-shadow")
 
     const onClick = () => {
-        if(props.onClick) props.onClick()
+        if(props.onClick) return props.onClick()
     }
 
     if(props.isDisabled || props.isLoading){
