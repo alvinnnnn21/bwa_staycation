@@ -17,7 +17,7 @@ const Header = (props) => {
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <Text/>
                     <div className="collapse navbar-collapse">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav ml-auto">
                             <li className={`nav-item ${getNavLinkClass("/")}`}>
                                 <Button className="nav-link" type="link" href="/">
                                     Home
