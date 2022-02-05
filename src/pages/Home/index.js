@@ -3,7 +3,9 @@ import {
   Header,
   Hero,
   MostPicked,
-  Categories
+  Categories,
+  Testimoni,
+  Footer
 } from '../../components';
 import homeData from '../../json/landingPage.json';
 
@@ -21,6 +23,8 @@ const Home = (props) => {
             <Categories data={item} key={`category-${i}`}/>
           ))
         }
+        <Testimoni data={homeData.testimonial}/>
+        <Footer/>
       </>
   )
 };
